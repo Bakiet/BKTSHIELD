@@ -1,0 +1,216 @@
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\Controllers.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\Controllers.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\DataObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\DataObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\obj\Debug\Controllers.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\obj\Debug\Controllers.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\bin\Debug\Controllers.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\bin\Debug\Controllers.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\bin\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\bin\Debug\DataObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\bin\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\bin\Debug\DataObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\obj\Debug\Controllers.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\Controllers\obj\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\bin\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\bin\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\obj\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\Controllers\obj\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\bin\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\bin\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\obj\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\Controllers\obj\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\bin\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\bin\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\obj\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\Controllers\obj\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\bin\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\bin\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\obj\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\Controllers\obj\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\bin\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\bin\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\obj\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\Controllers\obj\Debug\Controllers.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\obj\Debug\Controllers.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\bin\Debug\Controllers.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\bin\Debug\Controllers.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\bin\Debug\BusinessObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\bin\Debug\DataObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\bin\Debug\BusinessObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\bin\Debug\DataObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\Controllers\obj\Debug\Controllers.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\bin\Debug\Controllers.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\bin\Debug\Controllers.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\bin\Debug\DataObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\bin\Debug\DataObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\obj\Debug\Controllers.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\Controllers\obj\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\obj\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\bin\Debug\Controllers.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\bin\Debug\Controllers.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\Controllers\obj\Debug\Controllers.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\Controllers.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\Controllers.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\DataObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\bin\Debug\DataObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\obj\Debug\Controllers.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\Controllers\obj\Debug\Controllers.pdb
+C:\Users\DiffSoft\Desktop\02112010\Controllers\bin\Debug\Controllers.dll
+C:\Users\DiffSoft\Desktop\02112010\Controllers\bin\Debug\Controllers.pdb
+C:\Users\DiffSoft\Desktop\02112010\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\DiffSoft\Desktop\02112010\Controllers\bin\Debug\DataObjects.dll
+C:\Users\DiffSoft\Desktop\02112010\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\DiffSoft\Desktop\02112010\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\DiffSoft\Desktop\02112010\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\DiffSoft\Desktop\02112010\Controllers\obj\Debug\Controllers.dll
+C:\Users\DiffSoft\Desktop\02112010\Controllers\obj\Debug\Controllers.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\obj\Debug\Controllers.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\obj\Debug\Controllers.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\bin\Debug\Controllers.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\bin\Debug\Controllers.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\bin\Debug\DataObjects.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\Controllers\bin\Debug\DataObjects.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\ResolveAssemblyReference.cache
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\ResolveAssemblyReference.cache
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\Controllers.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\BusinessObjects.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\bin\Debug\DataObjects.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\ResolveAssemblyReference.cache
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\ACP\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\ACP\Controllers\bin\Debug\Controllers.dll
+C:\Users\Juan\Desktop\ACP\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\ACP\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\ACP\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\ACP\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\ACP\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\ACP\Controllers\obj\Debug\Controllers.dll
+C:\Users\Juan\Desktop\ACP\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\ACP 2\Controllers\bin\Debug\Controllers.dll
+C:\Users\Juan\Desktop\ACP 2\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\ACP 2\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\ACP 2\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\ACP 2\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\ACP 2\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\ACP 2\Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\ACP 2\Controllers\obj\Debug\Controllers.dll
+C:\Users\Juan\Desktop\ACP 2\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\BKT SPY\Controllers\bin\Debug\Controllers.dll
+C:\Users\Juan\Desktop\BKT SPY\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\BKT SPY\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\BKT SPY\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKT SPY\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\BKT SPY\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKT SPY\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\BKT SPY\Controllers\obj\Debug\Controllers.dll
+C:\Users\Juan\Desktop\BKT SPY\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\BKTSPY\Controllers\bin\Debug\Controllers.dll
+C:\Users\Juan\Desktop\BKTSPY\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\BKTSPY\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\BKTSPY\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKTSPY\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\BKTSPY\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKTSPY\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\BKTSPY\Controllers\obj\Debug\Controllers.dll
+C:\Users\Juan\Desktop\BKTSPY\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\bin\Debug\Controllers.dll
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\obj\Debug\Controllers.dll
+C:\Users\Juan\Desktop\BKTSHIELD\Controllers\obj\Debug\Controllers.pdb
+E:\Github\BKTSHIELD\Controllers\bin\Debug\Controllers.dll
+E:\Github\BKTSHIELD\Controllers\bin\Debug\Controllers.pdb
+E:\Github\BKTSHIELD\Controllers\bin\Debug\BusinessObjects.dll
+E:\Github\BKTSHIELD\Controllers\bin\Debug\DataObjects.dll
+E:\Github\BKTSHIELD\Controllers\bin\Debug\BusinessObjects.pdb
+E:\Github\BKTSHIELD\Controllers\bin\Debug\DataObjects.pdb
+E:\Github\BKTSHIELD\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+E:\Github\BKTSHIELD\Controllers\obj\Debug\Controllers.dll
+E:\Github\BKTSHIELD\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Debug\Controllers.dll
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Debug\DataObjects.dll
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\bktshield\Controllers\obj\Debug\Controllers.dll
+C:\Users\Juan\Documents\bktshield\Controllers\obj\Debug\Controllers.pdb

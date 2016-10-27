@@ -1,0 +1,89 @@
+Report created: 
+	6/14/2016	1:11:34 AM
+
+Project name: JB After Effects Loading Screen.aep
+
+Source files collected to: 
+	O:\Junaish Work With Project Files\After Effects\JB After Effects Loading Screen
+
+Source files collected: All
+
+Collected comps:  
+	Main
+	Lines
+	Bottom Left Loading Gadget
+	Dots
+	Bottom Right Numbers
+	Inner Gadget
+	Top Left Numbers
+	Circle Numbers
+	Bullet Points
+	JB Files
+	
+Number of collected files:  190
+
+Size of collected files:  8.7 MB
+
+Collected source files: 
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Carbon Flicker.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Carbon.jpg
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Edited Sound Pieces\Cursor Over.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Edited Sound Pieces\Login Sound Short 1.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Edited Sound Pieces\Next Next.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Edited Sound Pieces\Offset Characters.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Edited Sound Pieces\Selected Sound Amplitude Less.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Internet hi-tech vocoder rollover.mp3
+	Sequence "FormRunning_{00224-00402}.png" at O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\RunningMan with 179 files and 0 auxiliary files
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\slimswish.wav
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\Strange Alien Electrical Noise.mp3
+	O:\Junaish Work With Project Files\After Effects\After Effects Portfolio Project\tvstatic.wav
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  19
+
+Effect:  CC Light Sweep
+	
+Effect:  Color Balance
+	
+Effect:  Curves
+	
+Effect:  Drop Shadow
+	
+Effect:  Glow
+	
+Effect:  Grid
+	
+Effect:  Hue/Saturation
+	
+Effect:  Lens Flare
+	
+Effect:  Levels
+	
+Effect:  Linear Wipe
+	
+Effect:  Noise
+	
+Effect:  Numbers
+	External dependencies:  
+		Font family: ‘Arial’, Font style: ‘Regular’
+Effect:  Optical Flares
+	
+Effect:  Photo Filter
+	
+Effect:  Ramp
+	
+Effect:  Stroke
+	
+Effect:  Tint
+	
+Effect:  Twitch
+	
+Effect:  Venetian Blinds
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “Arial”, Font style: “Regular”
+

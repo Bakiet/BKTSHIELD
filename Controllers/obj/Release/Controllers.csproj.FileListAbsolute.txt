@@ -1,0 +1,9 @@
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Release\Controllers.dll
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Release\Controllers.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Release\BusinessObjects.dll
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Release\DataObjects.dll
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Release\BusinessObjects.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\bin\Release\DataObjects.pdb
+C:\Users\Juan\Documents\bktshield\Controllers\obj\Release\Controllers.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\bktshield\Controllers\obj\Release\Controllers.dll
+C:\Users\Juan\Documents\bktshield\Controllers\obj\Release\Controllers.pdb

@@ -1,0 +1,8 @@
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Release\DataObjects.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Release\DataObjects.pdb
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Release\BusinessObjects.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Release\MySql.Data.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Release\BusinessObjects.pdb
+C:\Users\Juan\Documents\bktshield\DataObjects\obj\Release\DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\bktshield\DataObjects\obj\Release\DataObjects.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\obj\Release\DataObjects.pdb

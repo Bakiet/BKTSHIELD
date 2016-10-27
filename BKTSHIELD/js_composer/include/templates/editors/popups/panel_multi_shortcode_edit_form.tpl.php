@@ -1,0 +1,18 @@
+<div id="vc_multi-properties-panel" class="vc_panel">
+	<div class="vc_panel-heading">
+		<a title="<?php _e( 'Close panel', 'blackfyre' ); ?>" href="#" class="vc_close" data-dismiss="panel"
+		   aria-hidden="true"><i class="icon"></i></a>
+		<a title="<?php _e( 'Hide panel', 'blackfyre' ); ?>" href="#" class="vc_transparent" data-transparent="panel"
+		   aria-hidden="true"><i class="icon"></i></a>
+
+		<h3 class="vc_panel-title"><?php _e( 'Edit Elements', 'blackfyre' ) ?></h3>
+	</div>
+	<div class="vc_panel-body vc_properties-list">
+	</div>
+	<div class="vc_panel-footer">
+		<button type="button" class="vc_btn vc_panel-btn-close"
+		        data-dismiss="panel"><?php _e( 'Close', 'blackfyre' ) ?></button>
+		<button type="button" class="vc_btn vc_panel-btn-save vc_save"
+		        data-save="true"><?php _e( 'Save Changes', 'blackfyre' ) ?></button>
+	</div>
+</div>

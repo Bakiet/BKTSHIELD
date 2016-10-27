@@ -1,0 +1,165 @@
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\DataObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\DataObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\obj\Debug\DataObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\obj\Debug\DataObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\bin\Debug\DataObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\bin\Debug\DataObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\bin\Debug\BusinessObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\bin\Debug\BusinessObjects.pdb
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\obj\Debug\DataObjects.dll
+E:\PROYECTOS\TRANSVALVEN\TRASNVALVENONLINE\05102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\obj\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\07102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\obj\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\17102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\obj\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\19102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\obj\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\24102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\obj\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\27102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\bin\Debug\DataObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\bin\Debug\DataObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\bin\Debug\BusinessObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\obj\Debug\DataObjects.dll
+D:\Different Software\Clientes\TRANSVALVEN\Proyecto\TRANSVALVENONLINE_V_1.2\28102010\28102010\DataObjects\obj\Debug\DataObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\bin\Debug\DataObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\bin\Debug\DataObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\obj\Debug\DataObjects.dll
+C:\Documents and Settings\Administrador\Escritorio\28102010\28102010\DataObjects\obj\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\bin\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\bin\Debug\DataObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\bin\Debug\BusinessObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\obj\Debug\DataObjects.dll
+D:\PROYECTOS\Transvalven\TransvalvenONLINE\30102010 JD\DataObjects\obj\Debug\DataObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\DataObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\DataObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\BusinessObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\bin\Debug\BusinessObjects.pdb
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\obj\Debug\DataObjects.dll
+D:\Sistema\Site\TRANSVALVEN\TRASNVALVENONLINE\FUENTE\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\DiffSoft\Desktop\02112010\DataObjects\obj\Debug\DataObjects.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\obj\Debug\DataObjects.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\obj\Debug\DataObjects.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\bin\Debug\DataObjects.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\bin\Debug\DataObjects.pdb
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Documents and Settings\Juan\Escritorio\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.pdb
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.dll
+F:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.pdb
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.dll
+G:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.dll
+C:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\DataObjects.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\bin\Debug\BusinessObjects.pdb
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.dll
+Y:\CROSSFIRE\Clan ProVenezuela\Sistema\SolutionVzla\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\ACP\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\ACP\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\ACP\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\ACP\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\ACP\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\ACP\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\ACP\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\ACP 2\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\ACP 2\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\ACP 2\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\ACP 2\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\ACP 2\DataObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\ACP 2\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\ACP 2\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\bin\Debug\MySql.Data.dll
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKT SPY\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\bin\Debug\MySql.Data.dll
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Juan\Desktop\BKTSHIELD\DataObjects\obj\Debug\DataObjects.pdb
+E:\Github\BKTSHIELD\DataObjects\bin\Debug\DataObjects.dll
+E:\Github\BKTSHIELD\DataObjects\bin\Debug\DataObjects.pdb
+E:\Github\BKTSHIELD\DataObjects\bin\Debug\BusinessObjects.dll
+E:\Github\BKTSHIELD\DataObjects\bin\Debug\MySql.Data.dll
+E:\Github\BKTSHIELD\DataObjects\bin\Debug\BusinessObjects.pdb
+E:\Github\BKTSHIELD\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
+E:\Github\BKTSHIELD\DataObjects\obj\Debug\DataObjects.dll
+E:\Github\BKTSHIELD\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Debug\MySql.Data.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Documents\bktshield\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\bktshield\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Juan\Documents\bktshield\DataObjects\obj\Debug\DataObjects.pdb
