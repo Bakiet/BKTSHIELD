@@ -2,3 +2,4 @@ C:\Users\Juan\Documents\bktshield\BusinessObjects\bin\Release\BusinessObjects.dl
 C:\Users\Juan\Documents\bktshield\BusinessObjects\bin\Release\BusinessObjects.pdb
 C:\Users\Juan\Documents\bktshield\BusinessObjects\obj\Release\BusinessObjects.dll
 C:\Users\Juan\Documents\bktshield\BusinessObjects\obj\Release\BusinessObjects.pdb
+C:\Users\Juan\Documents\BKTSHIELD\BusinessObjects\obj\Release\BusinessObjects.csprojResolveAssemblyReference.cache

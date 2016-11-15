@@ -47,7 +47,7 @@ namespace BKTSHIELD
         /// <returns>Hash as string</returns>
         private static string MakeHashString(byte[] hash)
         {
-            StringBuilder s = new StringBuilder();
+            StringBuilder s = new StringBuilder(hash.Length * 2);
 
             foreach (byte b in hash)
                 s.Append(b.ToString("x2").ToLower());

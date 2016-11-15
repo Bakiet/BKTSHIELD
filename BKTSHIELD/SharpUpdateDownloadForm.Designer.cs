@@ -55,6 +55,7 @@
             // lblProgress
             // 
             this.lblProgress.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.lblProgress.ForeColor = System.Drawing.Color.Lime;
             this.lblProgress.Location = new System.Drawing.Point(34, 137);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(344, 13);

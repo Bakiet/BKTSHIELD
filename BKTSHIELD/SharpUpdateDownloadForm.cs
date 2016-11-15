@@ -78,7 +78,7 @@ namespace BKTSHIELD
             // Update progressbar on download
             if (Login.regionUri == "Latinoamérica")
             {
-                this.lblProgress.Text = String.Format("Desacargado {0} of {1}", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
+                this.lblProgress.Text = String.Format("Descargado {0} of {1}", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
             }
             if (Login.regionUri == "North America")
             {
@@ -174,7 +174,6 @@ namespace BKTSHIELD
         {
             string file = ((string[])e.Argument)[0];
             string updateMD5 = ((string[])e.Argument)[1];
-
             // Hash the file and compare to the hash in the update xml
             if (Hasher.HashFile(file, HashType.MD5).ToUpper() != updateMD5.ToUpper())
                 e.Result = DialogResult.No;

@@ -2,7 +2,9 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace BKTSHIELD
 {
@@ -11,6 +13,14 @@ namespace BKTSHIELD
     /// </summary>
     public class SharpUpdater
     {
+        //new updater
+        private static int cVersion = 4;
+        private static string XMLFileLocation = "version.xml";
+
+        private static int oVersion;
+        private static string Name;
+        private static string Location;
+        private static string Filename;
         /// <summary>
         /// Holds the program-to-update's info
         /// </summary>
@@ -106,6 +116,23 @@ namespace BKTSHIELD
         /// <param name="update">The update xml info</param>
         private void DownloadUpdate(SharpUpdateXml update)
         {
+            XDocument doc = XDocument.Load(XMLFileLocation);
+
+            var NameElement = doc.Descendants("Name");
+            Name = string.Concat(NameElement.Nodes());
+
+            var VersionElement = doc.Descendants("Version");
+            oVersion = Convert.ToInt32(string.Concat(VersionElement.Nodes()));
+
+            var LocationElement = doc.Descendants("Location");
+            Location = string.Concat(LocationElement.Nodes());
+
+            var FilenameElement = doc.Descendants("Filename");
+            Filename = string.Concat(FilenameElement.Nodes());
+
+
+
+
             SharpUpdateDownloadForm form = new SharpUpdateDownloadForm(update.Uri, update.MD5, this.applicationInfo.ApplicationIcon);
             DialogResult result = form.ShowDialog(this.applicationInfo.Context);
 
@@ -117,6 +144,24 @@ namespace BKTSHIELD
 
                 // "Install" it
                 UpdateApplication(form.TempFilePath, currentPath, newPath, update.LaunchArgs);
+
+                Process[] processes = Process.GetProcessesByName("BKTSHIELD");
+                foreach (var process in processes)
+                {
+                    process.Kill();
+                }
+                Process[] processes2 = Process.GetProcessesByName("BKTSHIELD.vshost");
+                foreach (var process in processes2)
+                {
+                    process.Kill();
+                }
+
+                using (var client = new WebClient())
+                {
+                   
+                    client.DownloadFile(Location, Filename);
+                    
+                }
 
                 Application.Exit();
             }
@@ -136,11 +181,11 @@ namespace BKTSHIELD
             {
                 if (Login.regionUri == "Latinoamérica")
                 {
-                    MessageBox.Show("Problema con la descarga de la actualización.\nPor favor intente mas tarde.", "Actualización con error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Problema con la descarga.\n Por favor intente mas tarde.", "Actualización con error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 if (Login.regionUri == "North America")
                 {
-                    MessageBox.Show("Problem downloading the actualización.Por Please try again later.", "Update error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Problem downloading.\n Por Please try again later.", "Update error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 
             }
@@ -155,14 +200,17 @@ namespace BKTSHIELD
         /// <param name="launchArgs">The launch arguments</param>
         private void UpdateApplication(string tempFilePath, string currentPath, string newPath, string launchArgs)
         {
-            string argument = "/C choice /C Y /N /D Y /T 4 & Del /F /Q \"{0}\" & choice /C Y /N /D Y /T 2 & Move /Y \"{1}\" \"{2}\" & Start \"\" /D \"{3}\" \"{4}\" {5}";
-
+            string argument = "/C choice /C Y /N /D Y /T 1 & Del /F /Q \"{0}\" & choice /C Y /N /D Y /T 1 & Move /Y \"{1}\" \"{2}\" & Start \"\" /D \"{3}\" \"{4}\" {5}";
+            
             ProcessStartInfo Info = new ProcessStartInfo();
             Info.Arguments = String.Format(argument, currentPath, tempFilePath, newPath, Path.GetDirectoryName(newPath), Path.GetFileName(newPath), launchArgs);
             Info.WindowStyle = ProcessWindowStyle.Hidden;
             Info.CreateNoWindow = true;
             Info.FileName = "cmd.exe";
             Process.Start(Info);
+
+           
+           
         }
     }
 }

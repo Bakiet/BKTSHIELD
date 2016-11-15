@@ -21,6 +21,8 @@ namespace BKTSHIELD
 {
     public partial class frmBKT : Form, ISharpUpdatable
     {
+        
+        private int counter;
         private SharpUpdater updater;
         public static string strshowUI;
         public static DateTime recordStarttime;
@@ -51,6 +53,7 @@ namespace BKTSHIELD
 
         public frmBKT(int id,string user)
         {
+            counter = 0;
             idusuario = id;
             username = user;
             InitializeComponent();
@@ -63,11 +66,12 @@ namespace BKTSHIELD
             {
                 label4.Text = "Imagenes:";
                 label2.Text = "Partida  : ";
-                tabControlBKT.TabPages[0].Text = "Partidos";
+                lblMatches.Text = "Partidos";
+                lblMatchesOthers.Text = "Partidos Otros";               
                 usuarioToolStripMenuItem.Text = "Usuario";
                 usuarioToolStripMenuItem.DropDownItems[0].Text = "Cerrar sesion";
-                opcionesToolStripMenuItem.Text = "Herramientas";
-                opcionesToolStripMenuItem.DropDownItems[0].Text = "Opciones";
+              //  opcionesToolStripMenuItem.Text = "Herramientas";
+              //  opcionesToolStripMenuItem.DropDownItems[0].Text = "Opciones";
                 ayudaToolStripMenuItem.Text = "Ayuda";
                 ayudaToolStripMenuItem.DropDownItems[0].Text = "Verificar actualizaciones";
                 ayudaToolStripMenuItem.DropDownItems[1].Text = "Ver ayuda";
@@ -77,11 +81,12 @@ namespace BKTSHIELD
             {
                 label4.Text = "Images";
                 label2.Text = "Match  : ";
-                tabControlBKT.TabPages[0].Text = "Matches";
+                lblMatches.Text = "Matches";
+                lblMatchesOthers.Text = "Others Matches";               
                 usuarioToolStripMenuItem.Text = "User";
                 usuarioToolStripMenuItem.DropDownItems[0].Text = "Logout";
-                opcionesToolStripMenuItem.Text = "Tools";
-                opcionesToolStripMenuItem.DropDownItems[0].Text = "Options";
+               // opcionesToolStripMenuItem.Text = "Tools";
+               // opcionesToolStripMenuItem.DropDownItems[0].Text = "Options";
                 ayudaToolStripMenuItem.Text = "Help";
                 ayudaToolStripMenuItem.DropDownItems[0].Text = "Check Updates";
                 ayudaToolStripMenuItem.DropDownItems[1].Text = "See Help";
@@ -236,7 +241,7 @@ namespace BKTSHIELD
 
             graphics.CopyFromScreen(0, 0, 0, 0, printscreen.Size);
 
-            stream = @"" + System.IO.Directory.GetCurrentDirectory() + "/prints/Date-" + DateTime.Now.ToString().Replace("/", "").Replace(" ", "").Replace(":", "").Replace(".", "") + "-Match-" + partidoid + "-Player-" + username + "(" +idusuario + ").jpg";
+            stream = @"" + System.IO.Directory.GetCurrentDirectory() + "/prints/Date-" + DateTime.Now.ToString().Replace("/", "").Replace(" ", "").Replace(":", "").Replace(".", "") + "-Match-" + partidoid + "-Player-" +idusuario + ".jpg";
             // string stream = "@" + System.IO.Directory.GetCurrentDirectory() + "/ photos/" + DateTime.Now.ToString().Replace("/", "").Replace(" ", "").Replace(":", "").Replace(".", "") + txtMatchID.Text + ".jpg";            
             printscreen.Save(stream, ImageFormat.Jpeg);
             //File.SetAttributes(stream, FileAttributes.);
@@ -383,6 +388,7 @@ namespace BKTSHIELD
         }
         private void loadgrid()
         {
+           
             pbEscaneando.Visible = false;
             pbEscanear.Visible = true;
             btnAceptar.Visible = false;
@@ -416,29 +422,39 @@ namespace BKTSHIELD
                 MySqlDataAdapter MyDA = new MySqlDataAdapter();
                 MySqlDataAdapter MyDA2 = new MySqlDataAdapter();
                 MySqlDataAdapter MyDA3 = new MySqlDataAdapter();
+                MySqlDataAdapter MyDAOthers = new MySqlDataAdapter();
                 // string query = "SELECT id,title,team1,team2 FROM `wp_cw_matches` WHERE `status` in(`active`,`pending`)";
                 StringBuilder sql = new StringBuilder();
 
                 DataSet d1 = new DataSet();
                 DataSet d2 = new DataSet();
                 DataSet d3 = new DataSet();
+                DataSet d1others = new DataSet();
                 string query = "";
+                string queryothers = "";
 
                 if (Login.regionUri == "Latinoamérica")
                 {
                     query = "SELECT  m.`id` AS `ID`,p.`guid` AS `Equipo AS`, m.`title` AS `Partido` , (SELECT p2.guid AS logo1 FROM wp_2_posts p2,wp_2_cw_matches m2,wp_2_cw_teams t2 WHERE m.team1 = t2.id AND t2.logo = p2.id  group by m.id) AS `Equipo BS`,m.`status` AS `Status` FROM `wp_2_posts` p,`wp_2_cw_matches` m,`wp_2_cw_teams` t WHERE m.status IN ('pending','active') AND m.`team2` = t.`id` AND t.`logo` = p.`id`  group by m.`id`";
+                    queryothers = "SELECT  m.`id` AS `ID`,p.`guid` AS `Equipo AS`, m.`title` AS `Partido` , (SELECT p2.guid AS logo1 FROM wp_2_posts p2,wp_2_bkt_cw_matches m2,wp_2_bkt_cw_teams t2 WHERE m.team1 = t2.id AND t2.logo = p2.id  group by m.id) AS `Equipo BS`,m.`status` AS `Status` FROM `wp_2_posts` p,`wp_2_bkt_cw_matches` m,`wp_2_bkt_cw_teams` t WHERE m.status IN ('pending','active') AND m.`team2` = t.`id` AND t.`logo` = p.`id`  group by m.`id`";
                 }
                 if (Login.regionUri == "North America")
                 {
                     query = "SELECT m.`id` AS `ID`,p.`guid` AS `Equipo AS`, m.`title` AS `Partido` , (SELECT p2.guid AS logo1 FROM wp_5_posts p2, wp_5_cw_matches m2,wp_5_cw_teams t2 WHERE m.team1 = t2.id AND t2.logo = p2.id  group by m.id) AS `Equipo BS`, m.`status` AS `Status` FROM `wp_5_posts` p,`wp_5_cw_matches` m,`wp_5_cw_teams` t WHERE m.status IN ('pending', 'active') AND m.`team2` = t.`id` AND t.`logo` = p.`id`  group by m.`id`";
+                    queryothers = "SELECT  m.`id` AS `ID`,p.`guid` AS `Equipo AS`, m.`title` AS `Partido` , (SELECT p2.guid AS logo1 FROM wp_2_posts p2,wp_2_bkt_cw_matches m2,wp_2_bkt_cw_teams t2 WHERE m.team1 = t2.id AND t2.logo = p2.id  group by m.id) AS `Equipo BS`,m.`status` AS `Status` FROM `wp_2_posts` p,`wp_2_bkt_cw_matches` m,`wp_2_bkt_cw_teams` t WHERE m.status IN ('pending','active') AND m.`team2` = t.`id` AND t.`logo` = p.`id`  group by m.`id`";
                 }
 
 
                 MyDA.SelectCommand = new MySqlCommand(query, cnn);
+                MyDAOthers.SelectCommand = new MySqlCommand(queryothers, cnn);
 
                 d1 = new DataSet();
                 dtgRooms.DataSource = d1;
                 dtgRooms.Columns.Clear();
+
+                d1others = new DataSet();
+                dtgRoomsOthers.DataSource = d1others;
+                dtgRoomsOthers.Columns.Clear();
                 // MySqlCommand command = new MySqlCommand(sql.ToString(), cnn);
                 // string sqlSelectAll = ";SELECT  p.`guid` AS `logo2` FROM `wp_posts` p,`wp_cw_matches` m,`wp_cw_teams` t  WHERE m.`team2` = t.`id` AND t.`logo` = p.`id` group by m.`id`";
                 //  MyDA.SelectCommand = new MySqlCommand(sqlSelectAll, cnn);
@@ -454,11 +470,15 @@ namespace BKTSHIELD
 
 
                 DataTable table = new DataTable();
-
+                DataTable tableothers = new DataTable();
 
                 dtgRooms.AutoGenerateColumns = false;
                 MyDA.Fill(d1, "table");
                 dtgRooms.DataSource = d1.Tables[0].DefaultView;
+
+                dtgRoomsOthers.AutoGenerateColumns = false;
+                MyDAOthers.Fill(d1others, "tableothers");
+                dtgRoomsOthers.DataSource = d1others.Tables[0].DefaultView;
                 /*dtgRooms.Columns[0].Width = 40;
                 dtgRooms.Columns[1].Width = 60;
                 dtgRooms.Columns[2].Width = 100;
@@ -488,11 +508,21 @@ namespace BKTSHIELD
                 //dtgRooms.DataSource = bSource;
 
                 DataGridViewColumn ID = new DataGridViewTextBoxColumn();
+                
                 ID.DataPropertyName = "ID";
                 ID.HeaderText = "ID";
                 ID.Name = "ID";
                 ID.Width = 30;
                 dtgRooms.Columns.Add(ID);
+
+                DataGridViewColumn IDothers = new DataGridViewTextBoxColumn();
+
+                IDothers.DataPropertyName = "ID";
+                IDothers.HeaderText = "ID";
+                IDothers.Name = "IDothers";
+                IDothers.Width = 30;
+                dtgRoomsOthers.Columns.Add(IDothers);
+
 
                 DataGridViewColumn teamAstring = new DataGridViewTextBoxColumn();
                 teamAstring.DataPropertyName = "Equipo AS";
@@ -511,6 +541,24 @@ namespace BKTSHIELD
                 teamAstring.Visible = false;
                 dtgRooms.Columns.Add(teamAstring);
 
+                DataGridViewColumn teamAstringOthers = new DataGridViewTextBoxColumn();
+                teamAstringOthers.DataPropertyName = "Equipo AS";
+                if (Login.regionUri == "Latinoamérica")
+                {
+                    teamAstringOthers.HeaderText = "Equipo A";
+                }
+                if (Login.regionUri == "North America")
+                {
+                    teamAstringOthers.HeaderText = "Team A";
+                }
+
+
+                teamAstringOthers.Name = "Equipo AS others";
+                teamAstringOthers.Width = 80;
+                teamAstringOthers.Visible = false;
+                dtgRoomsOthers.Columns.Add(teamAstringOthers);
+
+
                 DataGridViewImageColumn teamA = new DataGridViewImageColumn();
                 teamA.DataPropertyName = "Equipo A";
                 if (Login.regionUri == "Latinoamérica")
@@ -527,6 +575,23 @@ namespace BKTSHIELD
                 teamA.ImageLayout = DataGridViewImageCellLayout.Stretch;
                 dtgRooms.Columns.Add(teamA);
 
+                DataGridViewImageColumn teamAOthers = new DataGridViewImageColumn();
+                teamAOthers.DataPropertyName = "Equipo A";
+                if (Login.regionUri == "Latinoamérica")
+                {
+                    teamAOthers.HeaderText = "Equipo A";
+                }
+                if (Login.regionUri == "North America")
+                {
+                    teamAOthers.HeaderText = "Team A";
+                }
+
+                teamAOthers.Name = "logo1others";
+                teamAOthers.Width = 50;
+                teamAOthers.ImageLayout = DataGridViewImageCellLayout.Stretch;
+                dtgRoomsOthers.Columns.Add(teamAOthers);
+
+
                 DataGridViewColumn vs = new DataGridViewTextBoxColumn();
                 vs.DataPropertyName = "Partido";
                 if (Login.regionUri == "Latinoamérica")
@@ -541,6 +606,22 @@ namespace BKTSHIELD
                 vs.Name = "vs";
                 vs.Width = 100;
                 dtgRooms.Columns.Add(vs);
+
+                DataGridViewColumn vsOthers = new DataGridViewTextBoxColumn();
+                vsOthers.DataPropertyName = "Partido";
+                if (Login.regionUri == "Latinoamérica")
+                {
+                    vsOthers.HeaderText = "Partido";
+                }
+                if (Login.regionUri == "North America")
+                {
+                    vsOthers.HeaderText = "Match";
+                }
+
+                vsOthers.Name = "vsothers";
+                vsOthers.Width = 100;
+                dtgRoomsOthers.Columns.Add(vsOthers);
+
 
                 DataGridViewColumn teamBstring = new DataGridViewTextBoxColumn();
                 teamBstring.DataPropertyName = "Equipo BS";
@@ -558,6 +639,23 @@ namespace BKTSHIELD
                 teamBstring.Visible = false;
                 dtgRooms.Columns.Add(teamBstring);
 
+                DataGridViewColumn teamBstringOthers = new DataGridViewTextBoxColumn();
+                teamBstringOthers.DataPropertyName = "Equipo BS";
+                if (Login.regionUri == "Latinoamérica")
+                {
+                    teamBstringOthers.HeaderText = "Equipo B";
+                }
+                if (Login.regionUri == "North America")
+                {
+                    teamBstringOthers.HeaderText = "Team B";
+                }
+
+                teamBstringOthers.Name = "Equipo BS others";
+                teamBstringOthers.Width = 80;
+                teamBstringOthers.Visible = false;
+                dtgRoomsOthers.Columns.Add(teamBstringOthers);
+
+
                 DataGridViewImageColumn teamB = new DataGridViewImageColumn();
                 teamB.DataPropertyName = "Equipo B";
                 if (Login.regionUri == "Latinoamérica")
@@ -574,6 +672,23 @@ namespace BKTSHIELD
                 teamB.ImageLayout = DataGridViewImageCellLayout.Stretch;
                 dtgRooms.Columns.Add(teamB);
 
+                DataGridViewImageColumn teamBOthers = new DataGridViewImageColumn();
+                teamBOthers.DataPropertyName = "Equipo B";
+                if (Login.regionUri == "Latinoamérica")
+                {
+                    teamBOthers.HeaderText = "Equipo B";
+                }
+                if (Login.regionUri == "North America")
+                {
+                    teamBOthers.HeaderText = "Team B";
+                }
+
+                teamBOthers.Name = "logo2others";
+                teamBOthers.Width = 50;
+                teamBOthers.ImageLayout = DataGridViewImageCellLayout.Stretch;
+                dtgRoomsOthers.Columns.Add(teamBOthers);
+
+
                 DataGridViewColumn status = new DataGridViewTextBoxColumn();
                 status.DataPropertyName = "Status";
                 status.HeaderText = "Status";
@@ -581,6 +696,14 @@ namespace BKTSHIELD
                 status.Width = 70;
                 dtgRooms.Columns.Add(status);
 
+                DataGridViewColumn statusOthers = new DataGridViewTextBoxColumn();
+                statusOthers.DataPropertyName = "Status";
+                statusOthers.HeaderText = "Status";
+                statusOthers.Name = "statusothers";
+                statusOthers.Width = 70;
+                dtgRoomsOthers.Columns.Add(statusOthers);
+
+                
                 // Bitmap bmp = new Bitmap();
                 //Bitmap bmp2 = new Bitmap();
                 // dtgRooms.DataSource = d1.Tables[0].DefaultView;
@@ -612,7 +735,12 @@ namespace BKTSHIELD
                     //   row["Equipo B"] = bmp2;
 
                 }
+                
+                
+
                 dtgRooms.AllowUserToAddRows = false;
+                dtgRoomsOthers.AllowUserToAddRows = false;
+
                 //    readerDatagrid.Close();
                 cnn.Close();
             }
@@ -621,7 +749,59 @@ namespace BKTSHIELD
                 ex.GetBaseException();// MessageBox.Show("Can not open connection ! ");
             }
         }
+        public void loaddtgMatchOthers()
+        {
+            pbLoading.Refresh();
+            counter = counter + 1;
+            pbLoading.Refresh();
+            if (counter <= 1) { 
+                foreach (DataGridViewRow rowothers in dtgRoomsOthers.Rows)
+                {
+                    pbLoading.Refresh();
+                    rowothers.Height = 50;
+                    pbLoading.Refresh();
+                    //var wc = new WebClient();
+                    //  Image x = Image.FromStream(wc.OpenRead(row["Equipo AS"].ToString()));
 
+                    HttpWebRequest myRequestOthers = (HttpWebRequest)WebRequest.Create(rowothers.Cells[1].Value.ToString());
+                    pbLoading.Refresh();
+                    myRequestOthers.Method = "GET";
+                    pbLoading.Refresh();
+                    HttpWebResponse myResponseOthers = (HttpWebResponse)myRequestOthers.GetResponse();
+                    pbLoading.Refresh();
+                    Bitmap bmpothers = new Bitmap(myResponseOthers.GetResponseStream());
+                    pbLoading.Refresh();
+                    //Image bmp = Image.FromFile(@"" + row["Equipo A"].ToString());
+                    myResponseOthers.Close();
+                    pbLoading.Refresh();
+                    rowothers.Cells[2].Value = bmpothers;
+                    pbLoading.Refresh();
+                    HttpWebRequest myRequest2others = (HttpWebRequest)WebRequest.Create(rowothers.Cells[4].Value.ToString());
+                    pbLoading.Refresh();
+                    myRequest2others.Method = "GET";
+                    pbLoading.Refresh();
+                    HttpWebResponse myResponse2others = (HttpWebResponse)myRequest2others.GetResponse();
+                    pbLoading.Refresh();
+                    Bitmap bmp2others = new Bitmap(myResponse2others.GetResponseStream());
+                    pbLoading.Refresh();
+                    //Image bmp = Image.FromFile(@"" + row["Equipo A"].ToString());
+                    myResponse2others.Close();
+                    pbLoading.Refresh();
+                    rowothers.Cells[5].Value = bmp2others;
+                    pbLoading.Refresh();
+
+                    //   Image bmp2 = Image.FromFile(@"" + row["Equipo B"].ToString());
+                    //myResponse.Close();
+                    //   row["Equipo B"] = bmp2;
+
+                }
+            }
+            pbLoading.Refresh();
+            pbLoading.Visible = false;
+            lblloading.Visible = false;
+
+
+        }
         //Update statement
         public void UpdateStuff()
         {
@@ -864,12 +1044,12 @@ namespace BKTSHIELD
         {
            
             lvpartidos.Visible = true;
-            tabControlBKT.Visible = true;
+           
           /*  pbloadinglogo.Visible = false;
             progressBar1.Visible = false;
             btnContinuar.Visible = false;
             lblresultado.Visible = false;*/
-            dtgRooms.Visible = true;
+          
             btnAceptar.Visible = false;
         }
 
@@ -903,6 +1083,7 @@ namespace BKTSHIELD
             string searchValue = txtSearch.Text;
 
             dtgRooms.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dtgRoomsOthers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             try
             {
                 foreach (DataGridViewRow row in dtgRooms.Rows)
@@ -910,6 +1091,14 @@ namespace BKTSHIELD
                     if (row.Cells[3].Value.ToString().Contains(searchValue))
                     {
                         row.Selected = true;
+                        break;
+                    }
+                }
+                foreach (DataGridViewRow rowothers in dtgRoomsOthers.Rows)
+                {
+                    if (rowothers.Cells[3].Value.ToString().Contains(searchValue))
+                    {
+                        rowothers.Selected = true;
                         break;
                     }
                 }
@@ -927,6 +1116,7 @@ namespace BKTSHIELD
             string searchValue = txtSearch.Text;
 
             dtgRooms.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dtgRoomsOthers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             try
             {
                 foreach (DataGridViewRow row in dtgRooms.Rows)
@@ -938,6 +1128,19 @@ namespace BKTSHIELD
                     }
                     else {
                         row.Selected = false;
+                        break;
+                    }
+                }
+                foreach (DataGridViewRow rowothers in dtgRoomsOthers.Rows)
+                {
+                    if (rowothers.Cells[3].Value.ToString().Contains(searchValue))
+                    {
+                        rowothers.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        rowothers.Selected = false;
                         break;
                     }
                 }
@@ -971,9 +1174,8 @@ namespace BKTSHIELD
 
         public Uri UpdateXmlLocation
         {
-            get { return new Uri("https://bktgames.com/updates/project.xml"); }
-          // { return new Uri("https://raw.githubusercontent.com/henryxrl/SharpUpdate/master/project.xml"); }
-            
+            get { return new Uri("http://bktgames.com/updates/project.xml"); }
+
         }
 
         public Form Context
@@ -1027,5 +1229,152 @@ namespace BKTSHIELD
 
             }
         }
+
+ 
+
+    
+        private void dtgRoomsOthers_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+       
+        }
+
+        private void dtgRoomsOthers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            DataGridViewRow row = dtgRoomsOthers.Rows[rowIndex];
+
+            frmPass pass = new frmPass();
+
+            Controllers.PartidoController partidoController = new Controllers.PartidoController();
+
+            cnn.Close();
+            cnn.Open();
+            MySqlDataAdapter MyDAcheat = new MySqlDataAdapter();
+            BusinessObjects.Usuario user = new BusinessObjects.Usuario();
+            string sqlSelectAllCheats = "SELECT `pass` FROM `wp_2_bkt_cw_matches` WHERE id=" + row.Cells[0].Value.ToString() + "";
+            partidoid = row.Cells[0].Value.ToString();
+            MyDAcheat.SelectCommand = new MySqlCommand(sqlSelectAllCheats, cnn);
+            Partido partido = new Partido();
+            using (MySqlDataReader reader = MyDAcheat.SelectCommand.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+
+                    partido.pass = reader[0].ToString();
+
+                }
+            }
+            cnn.Close();
+
+
+
+            //  Partido partido = partidoController.ObtenerPass(row.Cells[0].Value.ToString());
+
+            if (partido != null)
+            {
+                pass.pass = partido.pass;
+                string clave = "";
+                //  pass.Show();
+                if (Login.regionUri == "Latinoamérica")
+                {
+                    clave = ShowDialog("Por favor Ingresa clave del partido", "BKT SHIELD");
+                }
+                if (Login.regionUri == "North America")
+                {
+                    clave = ShowDialog("Please put match password", "BKT SHIELD");
+                }
+
+                if (partido.pass == clave)
+                {
+                    lblPartido.Text = row.Cells[3].Value.ToString();
+                    InitializeTimer();
+                    BindUsuarios();
+                    btnAceptar.Visible = true;
+                    btnAceptar.Text = "Salir de Partido";
+                    pbEscaneando.Visible = true;
+                    pbEscanear.Visible = false;
+                }
+                else
+                {
+                    string message = String.Empty;
+                    string caption = String.Empty;
+                    if (clave == String.Empty)
+                    {
+                        if (Login.regionUri == "Latinoamérica")
+                        {
+                            message = "Coloque la clave de la partida, Por favor intente nuevamente!";
+                            caption = "Error Detectado";
+                        }
+                        if (Login.regionUri == "North America")
+                        {
+                            message = "Put the password to the match, Please try again!";
+                            caption = "Error Detected";
+                        }
+
+                        MessageBoxButtons buttons = MessageBoxButtons.OK;
+                        DialogResult result;
+
+                        result = MessageBox.Show(message, caption, buttons);
+                    }
+                    else
+                    {
+                        if (Login.regionUri == "Latinoamérica")
+                        {
+                            message = "Coloque la clave de la partida, Por favor intente nuevamente!";
+                            caption = "Error Detectado";
+                        }
+                        if (Login.regionUri == "North America")
+                        {
+                            message = "Password not match, Please try again!";
+                            caption = "Password not match";
+                        }
+
+
+                        MessageBoxButtons buttons = MessageBoxButtons.OK;
+                        DialogResult result;
+
+                        result = MessageBox.Show(message, caption, buttons);
+                    }
+                }
+            }
+            else
+            {
+
+            }
+        }
+
+        private void lblMatches_Click(object sender, EventArgs e)
+        {
+            dtgRooms.Visible = true;
+            dtgRoomsOthers.Visible = false;
+        }
+
+        private void lblMatchesOthers_Click(object sender, EventArgs e)
+        {
+            dtgRooms.Visible = false;
+            pbLoading.Visible = true;
+            if (Login.regionUri == "Latinoamérica")
+            {
+                lblloading.Text = "Cargando...";
+            }
+            if (Login.regionUri == "North America")
+            {
+                lblloading.Text = "Loading...";
+            }
+            pbLoading.Refresh();
+            lblloading.Visible = true;
+            // Display form modelessly
+            //loading.Show();
+
+            //  ALlow main UI thread to properly display please wait form.
+            Application.DoEvents();
+
+            
+
+            dtgRoomsOthers.Visible = true;
+            loaddtgMatchOthers();
+        }
+
+
     }
 }

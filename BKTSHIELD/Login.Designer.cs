@@ -41,15 +41,20 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblwait = new System.Windows.Forms.Label();
+            this.lblcomunicated = new System.Windows.Forms.Label();
+            this.pbExit = new System.Windows.Forms.PictureBox();
+            this.lblversion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             this.SuspendLayout();
             // 
             // txtClave
             // 
             this.txtClave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.txtClave.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtClave.Location = new System.Drawing.Point(333, 94);
+            this.txtClave.Location = new System.Drawing.Point(309, 94);
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(173, 20);
@@ -59,7 +64,7 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtUsuario.Location = new System.Drawing.Point(333, 68);
+            this.txtUsuario.Location = new System.Drawing.Point(309, 68);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(173, 20);
             this.txtUsuario.TabIndex = 0;
@@ -70,7 +75,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(251, 100);
+            this.label2.Location = new System.Drawing.Point(227, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 5;
@@ -82,7 +87,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(284, 75);
+            this.label1.Location = new System.Drawing.Point(260, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 4;
@@ -134,7 +139,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLogin.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLogin.Location = new System.Drawing.Point(321, 141);
+            this.btnLogin.Location = new System.Drawing.Point(297, 141);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(95, 35);
             this.btnLogin.TabIndex = 12;
@@ -147,7 +152,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCancel.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCancel.Location = new System.Drawing.Point(436, 141);
+            this.btnCancel.Location = new System.Drawing.Point(412, 141);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(95, 35);
             this.btnCancel.TabIndex = 13;
@@ -177,7 +182,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Latinoamérica",
             "North America"});
-            this.comboBox1.Location = new System.Drawing.Point(333, 29);
+            this.comboBox1.Location = new System.Drawing.Point(309, 29);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(173, 21);
             this.comboBox1.TabIndex = 49;
@@ -189,11 +194,59 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(275, 37);
+            this.label3.Location = new System.Drawing.Point(251, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 50;
             this.label3.Text = "Region :";
+            // 
+            // lblwait
+            // 
+            this.lblwait.AutoSize = true;
+            this.lblwait.ForeColor = System.Drawing.Color.Lime;
+            this.lblwait.Location = new System.Drawing.Point(306, 193);
+            this.lblwait.Name = "lblwait";
+            this.lblwait.Size = new System.Drawing.Size(92, 13);
+            this.lblwait.TabIndex = 55;
+            this.lblwait.Text = "Iniciando sesión...";
+            this.lblwait.Visible = false;
+            // 
+            // lblcomunicated
+            // 
+            this.lblcomunicated.AutoSize = true;
+            this.lblcomunicated.ForeColor = System.Drawing.Color.Lime;
+            this.lblcomunicated.Location = new System.Drawing.Point(306, 213);
+            this.lblcomunicated.Name = "lblcomunicated";
+            this.lblcomunicated.Size = new System.Drawing.Size(161, 13);
+            this.lblcomunicated.TabIndex = 56;
+            this.lblcomunicated.Text = "Enlazándose con bktgames.com";
+            this.lblcomunicated.Visible = false;
+            // 
+            // pbExit
+            // 
+            this.pbExit.BackColor = System.Drawing.Color.Transparent;
+            this.pbExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbExit.BackgroundImage")));
+            this.pbExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbExit.Location = new System.Drawing.Point(529, 0);
+            this.pbExit.Name = "pbExit";
+            this.pbExit.Size = new System.Drawing.Size(19, 21);
+            this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbExit.TabIndex = 57;
+            this.pbExit.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
+            // 
+            // lblversion
+            // 
+            this.lblversion.AutoSize = true;
+            this.lblversion.BackColor = System.Drawing.Color.Transparent;
+            this.lblversion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblversion.ForeColor = System.Drawing.Color.Lime;
+            this.lblversion.Location = new System.Drawing.Point(485, 213);
+            this.lblversion.Name = "lblversion";
+            this.lblversion.Size = new System.Drawing.Size(53, 13);
+            this.lblversion.TabIndex = 58;
+            this.lblversion.Text = "Version:";
             // 
             // Login
             // 
@@ -201,7 +254,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(584, 235);
+            this.ClientSize = new System.Drawing.Size(550, 235);
+            this.Controls.Add(this.lblversion);
+            this.Controls.Add(this.pbExit);
+            this.Controls.Add(this.lblcomunicated);
+            this.Controls.Add(this.lblwait);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox2);
@@ -227,6 +284,7 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,5 +304,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblwait;
+        private System.Windows.Forms.Label lblcomunicated;
+        private System.Windows.Forms.PictureBox pbExit;
+        private System.Windows.Forms.Label lblversion;
     }
 }

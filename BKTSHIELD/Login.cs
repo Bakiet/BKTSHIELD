@@ -13,6 +13,7 @@ using System.Web;
 using System.Net.Sockets;
 using System.Collections.Specialized;
 using System.Windows.Input;
+using System.Reflection;
 
 namespace BKTSHIELD
 {
@@ -34,17 +35,23 @@ namespace BKTSHIELD
 
         public Login()
         {
+
             InitializeComponent();
             txtUsuario.Focus();
+            
         }
 
-   
 
+        
+        public Assembly ApplicationAssembly
+        {
+            get { return Assembly.GetExecutingAssembly(); }
+        }
 
-
-
+        
         private void Login_Load(object sender, EventArgs e)
         {
+            lblversion.Text = this.ApplicationAssembly.GetName().Version.ToString();
             comboBox1.SelectedIndex = 0;
             SetDefault(btnLogin);            
         }
@@ -77,6 +84,19 @@ namespace BKTSHIELD
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            lblwait.Visible = true;
+            lblcomunicated.Visible = true;
+            if (comboBox1.Text == "Latinoamérica")
+            {
+                lblcomunicated.Text = "Enlazándose con bktgames.com";
+                lblwait.Text = "Iniciando sesión, por favor espere...";
+            }
+            if (comboBox1.Text == "North America")
+            {
+                lblcomunicated.Text = "linking with bktgames.com";
+                lblwait.Text = "Sign in, Please wait...";
+            }
+            
             try {
                 string loginUri = "";
                 if (comboBox1.Text == "Latinoamérica"){
@@ -88,19 +108,20 @@ namespace BKTSHIELD
                     regionUri = "North America";
                     loginUri = "http://na.bktgames.com/wp-login.php";
                 }
-            string username = txtUsuario.Text;
+                
+                string username = txtUsuario.Text;
             string password = txtClave.Text;
             string reqString = "log=" + username + "&pwd=" + password;
             byte[] requestData = Encoding.UTF8.GetBytes(reqString);
-
-            CookieContainer cc = new CookieContainer();
+               
+                CookieContainer cc = new CookieContainer();
             var request = (HttpWebRequest)WebRequest.Create(loginUri);
             request.Proxy = null;
             request.AllowAutoRedirect = false;
             request.CookieContainer = cc;
             request.Method = "post";
-
-            request.ContentType = "application/x-www-form-urlencoded";
+              
+                request.ContentType = "application/x-www-form-urlencoded";
             request.ContentLength = requestData.Length;
             using (Stream s = request.GetRequestStream())
                 s.Write(requestData, 0, requestData.Length);
@@ -110,7 +131,8 @@ namespace BKTSHIELD
                 foreach (Cookie c in response.Cookies)
                     Console.WriteLine(c.Name + " = " + c.Value);
             }
-            string responseText = "";
+               
+                string responseText = "";
                 string newloginUri = "";
                 if (comboBox1.Text == "Latinoamérica")
                 {
@@ -120,28 +142,35 @@ namespace BKTSHIELD
                 {
                     newloginUri = "http://na.bktgames.com/";
                 }
-         
-            HttpWebRequest newrequest = (HttpWebRequest)WebRequest.Create(newloginUri);
+               
+                HttpWebRequest newrequest = (HttpWebRequest)WebRequest.Create(newloginUri);
             newrequest.Proxy = null;
-            newrequest.CookieContainer = cc;
-            HttpWebResponse newresponse = (HttpWebResponse)newrequest.GetResponse();
-            Stream resSteam = newresponse.GetResponseStream();
-            StreamReader sr = new StreamReader(resSteam);
+               
+                newrequest.CookieContainer = cc;
+                
+                HttpWebResponse newresponse = (HttpWebResponse)newrequest.GetResponse();
+                
+                Stream resSteam = newresponse.GetResponseStream();
+                
+                StreamReader sr = new StreamReader(resSteam);
             responseText = sr.ReadToEnd();
-            File.WriteAllText("private.html", sr.ReadToEnd());
+               
+                File.WriteAllText("private.html", sr.ReadToEnd());
            // System.Diagnostics.Process.Start("private.html");
             var encoding = ASCIIEncoding.ASCII;
-            /*
-            using (var reader = new System.IO.StreamReader(newresponse.GetResponseStream(), encoding))
-            {
-                responseText = reader.ReadToEnd();
-            }
-           */
-            // string responsestring = resSteam;
-
-            MySqlDataAdapter MyDA = new MySqlDataAdapter();
+                
+                /*
+                using (var reader = new System.IO.StreamReader(newresponse.GetResponseStream(), encoding))
+                {
+                    responseText = reader.ReadToEnd();
+                }
+               */
+                // string responsestring = resSteam;
+               
+                MySqlDataAdapter MyDA = new MySqlDataAdapter();
             // string query = "SELECT id,title,team1,team2 FROM `wp_cw_matches` WHERE `status` in(`active`,`pending`)";
             BusinessObjects.Usuario user = new BusinessObjects.Usuario();
+               
                 string sqlSelectAll = "";
                 if (comboBox1.Text == "Latinoamérica")
                 {
@@ -152,11 +181,11 @@ namespace BKTSHIELD
                     sqlSelectAll = "SELECT um.`user_id` AS id, um.`meta_value` AS imageprofile, u.`display_name` AS nikename FROM `wp_usermeta` um, `wp_users` u WHERE um.`user_id`= u.`ID` AND u.user_email='" + username + "' AND um.meta_key = 'profile_photo'";
                 }
                
-            MyDA.SelectCommand = new MySqlCommand(sqlSelectAll, cnn);
-
-            cnn.Open();
-
-            using (MySqlDataReader reader = MyDA.SelectCommand.ExecuteReader())
+                MyDA.SelectCommand = new MySqlCommand(sqlSelectAll, cnn);
+                
+                cnn.Open();
+               
+                using (MySqlDataReader reader = MyDA.SelectCommand.ExecuteReader())
             {
                 while (reader.Read())
                 {
@@ -166,25 +195,27 @@ namespace BKTSHIELD
                   
                 }
             }
-            /*
-            DataTable table = new DataTable();
-            MyDA.Fill(table);
-            BindingSource bSource = new BindingSource();
-            bSource.DataSource = table;
-            */
-            
-            cnn.Close();
-            if (user.UsuarioID.ToString() != "0" || user.UsuarioID.ToString() != "") { 
+                
+                /*
+                DataTable table = new DataTable();
+                MyDA.Fill(table);
+                BindingSource bSource = new BindingSource();
+                bSource.DataSource = table;
+                */
+                
+                cnn.Close();
+                
+                if (user.UsuarioID.ToString() != "0" || user.UsuarioID.ToString() != "") { 
                 if (responseText.Contains(user.Nombre))
                 {
-
-                    this.Hide();
+                        
+                        
                     int idusuario = usuarios.UsuarioID;
                     frmBKT form = new frmBKT(user.UsuarioID, user.Nombre);
                     form.Show();
+                       
 
-                    
-                }
+                    }
                 else
                 {
                         if (comboBox1.Text == "Latinoamérica")
@@ -246,6 +277,9 @@ namespace BKTSHIELD
                 }
                 
             }
+            
+            lblwait.Visible = true;
+            this.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -337,6 +371,11 @@ namespace BKTSHIELD
                 btnLogin.Text = "Sign in";
                 btnCancel.Text = "Cancel";
             }
+        }
+
+        private void pbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -128,6 +128,7 @@ namespace BKTSHIELD
                     string fileName = Path.GetFileName(Lee.Name);
                     string projectFilePath = Directory.GetCurrentDirectory() + "/prints/";
                     string projectFileServer = "https://s3.amazonaws.com/s3.bktgameslatam.com/";
+                    string projectFileServerBucket = "http://s3-us-west-2.amazonaws.com/s3.bktgameslatam.com/";
                     // File.Copy(Lee.Name, projectFilePath);
                     string workingdirectoryserver = projectFileServer;
                     string uploadfile = fileName;
@@ -137,7 +138,7 @@ namespace BKTSHIELD
 
                     string localimage = @"" + projectFilePath + uploadfile + "";
 
-                    registro.Imagen = @"" + projectFileServer + uploadfile;
+                    registro.Imagen = @"" + projectFileServerBucket + uploadfile;
                     // WordPressWrapper _wpWrapper = new WordPressWrapper(Url, User, Password);
                     // _wpWrapper.UploadFile(localimage, fileName, true, "image/jpeg");
 
@@ -160,15 +161,12 @@ namespace BKTSHIELD
                     s3.UploadFile(filePath, s3Bucket, newFileName, false);
 
 
-                    string query = "INSERT INTO bkt_imagen (UsuarioID,RegistroID,Imagen,PartidoID) VALUES(@usuarioid,@registroid,@image,@partidoid)";
+                    string query = "INSERT INTO bkt_imagen (UsuarioID,Imagen,PartidoID) VALUES(@usuarioid,@image,@partidoid)";
 
                     MySqlCommand cmd = new MySqlCommand(query, cnn);
 
                     MySqlParameter oParam0 = cmd.Parameters.Add("@usuarioid", MySqlDbType.Int32);
                     oParam0.Value = registro.UsuarioID;
-
-                    MySqlParameter oParam1 = cmd.Parameters.Add("@registroid", MySqlDbType.VarChar, 50);
-                    oParam1.Value = registro.ID;
 
                     MySqlParameter oParam2 = cmd.Parameters.Add("@image", MySqlDbType.VarChar, 500);
                     oParam2.Value = registro.Imagen;

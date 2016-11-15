@@ -107,7 +107,8 @@ E:\Github\BKTSHIELD\BusinessObjects\bin\Debug\BusinessObjects.pdb
 E:\Github\BKTSHIELD\BusinessObjects\obj\Debug\BusinessObjects.dll
 E:\Github\BKTSHIELD\BusinessObjects\obj\Debug\BusinessObjects.pdb
 E:\Github\BKTSHIELD\BusinessObjects\obj\Debug\BusinessObjects.csprojResolveAssemblyReference.cache
-C:\Users\Juan\Documents\bktshield\BusinessObjects\bin\Debug\BusinessObjects.dll
-C:\Users\Juan\Documents\bktshield\BusinessObjects\bin\Debug\BusinessObjects.pdb
-C:\Users\Juan\Documents\bktshield\BusinessObjects\obj\Debug\BusinessObjects.dll
-C:\Users\Juan\Documents\bktshield\BusinessObjects\obj\Debug\BusinessObjects.pdb
+C:\Users\Juan\Documents\BKTSHIELD\BusinessObjects\bin\Debug\BusinessObjects.dll
+C:\Users\Juan\Documents\BKTSHIELD\BusinessObjects\bin\Debug\BusinessObjects.pdb
+C:\Users\Juan\Documents\BKTSHIELD\BusinessObjects\obj\Debug\BusinessObjects.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\BKTSHIELD\BusinessObjects\obj\Debug\BusinessObjects.dll
+C:\Users\Juan\Documents\BKTSHIELD\BusinessObjects\obj\Debug\BusinessObjects.pdb

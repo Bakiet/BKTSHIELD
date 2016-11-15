@@ -77,7 +77,7 @@
             this.pbloadinglogo.BackColor = System.Drawing.Color.Transparent;
             this.pbloadinglogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbloadinglogo.BackgroundImage")));
             this.pbloadinglogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbloadinglogo.Location = new System.Drawing.Point(57, 12);
+            this.pbloadinglogo.Location = new System.Drawing.Point(60, 12);
             this.pbloadinglogo.Name = "pbloadinglogo";
             this.pbloadinglogo.Size = new System.Drawing.Size(253, 230);
             this.pbloadinglogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
