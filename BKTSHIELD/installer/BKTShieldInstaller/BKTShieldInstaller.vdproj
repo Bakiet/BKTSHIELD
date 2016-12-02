@@ -238,30 +238,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_35D5A05BA296BBBB98AB000629C7035B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2BDF4C2A1BEDDBC1DED4E15067B6B7E7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E160C686EB529C5B12A50D6083A9D415"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F5CD519A9DD2BAE4700BC528DCF7DC64"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_E6B10DC01ECC4E23B62942EB546BD63E"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -269,6 +245,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_E5036DD60ED1251D8C4E262F09F7579E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_35D5A05BA296BBBB98AB000629C7035B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2BDF4C2A1BEDDBC1DED4E15067B6B7E7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -341,6 +329,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_3CD74B677861429CAA72DEC4B06DBEEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E160C686EB529C5B12A50D6083A9D415"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F5CD519A9DD2BAE4700BC528DCF7DC64"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1048,7 +1048,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_43143F46C4484898843115F7C2F3AE07"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -1108,7 +1108,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BKT Shield"
         "ProductCode" = "8:{B0E1A855-4283-4D62-BB0A-26D1EF36E862}"
-        "PackageCode" = "8:{A18A0565-37A0-4FE7-99A2-6EFC8927EAFF}"
+        "PackageCode" = "8:{AB4F5718-1156-4318-BE88-BBB8C8A8B7B5}"
         "UpgradeCode" = "8:{1E0E77E5-9DBF-4AFA-BE9A-89262BD2AD37}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1129,7 +1129,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"

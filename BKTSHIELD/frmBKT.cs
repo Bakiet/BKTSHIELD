@@ -23,6 +23,7 @@ namespace BKTSHIELD
     {
         
         private int counter;
+        private int counter2;
         private SharpUpdater updater;
         public static string strshowUI;
         public static DateTime recordStarttime;
@@ -118,10 +119,8 @@ namespace BKTSHIELD
         {
             try
             {
-               
-               
 
-                string filetemp = @"" + System.IO.Directory.GetCurrentDirectory() + "/prints/" + "player" + idusuario + "match" + partidoid + "Temp.wmv";
+                //string filetemp = @"" + System.IO.Directory.GetCurrentDirectory() + "/prints/" + "player" + idusuario + "match" + partidoid + "Temp.wmv";
                 // startrecording();
            
 
@@ -197,7 +196,8 @@ namespace BKTSHIELD
                             {
                                 registro.Observacion = "Banned for file: " + cheat.Nombre + " Player: " + username;
                             }
-                            string query = "INSERT INTO bkt_registro (UsuarioID,cheat,Observacion,PartidoID) VALUES(" + registro.UsuarioID + "," + registro.cheat + ",'" + registro.Observacion + "'," + registro.ID + ")";
+                            string query = "UPDATE bkt_imagen SET cheat=" + registro.cheat + ",Observacion='" + registro.Observacion + "' WHERE UsuarioID=" + registro.UsuarioID + " AND PartidoID=" + registro.ID + "";
+                            //string query = "INSERT INTO bkt_registro (UsuarioID,cheat,Observacion,PartidoID) VALUES(" + registro.UsuarioID + "," + registro.cheat + ",'" + registro.Observacion + "'," + registro.ID + ")";
                             MySqlCommand cmd = new MySqlCommand(query, cnn);
                             cmd.ExecuteNonQuery();
 
@@ -367,6 +367,26 @@ namespace BKTSHIELD
         }
         private void frmBKT_Load(object sender, EventArgs e)
         {
+            dtgRoomsOthers.Visible = false;
+            pbLoading.Visible = true;
+            if (Login.regionUri == "Latinoamérica")
+            {
+                lblloading.Text = "Cargando...";
+            }
+            if (Login.regionUri == "North America")
+            {
+                lblloading.Text = "Loading...";
+            }
+            pbLoading.Refresh();
+            lblloading.Visible = true;
+            // Display form modelessly
+            //loading.Show();
+
+            //  ALlow main UI thread to properly display please wait form.
+            Application.DoEvents();
+
+            dtgRooms.Visible = true;
+            
             loadgrid();
         }
        
@@ -413,9 +433,30 @@ namespace BKTSHIELD
                         user.Nombre = reader[2].ToString();
 
                     }
+                    pbProfile.ImageLocation = user.image;
+                }
+                if (user.image == null)
+                {
+
+                    sqlSelectAllUser = "SELECT u.`id` AS id, u.`display_name` AS nikename FROM `wp_users` u WHERE u.ID=" + idusuario + "";
+
+
+
+                    MyDAUser.SelectCommand = new MySqlCommand(sqlSelectAllUser, cnn);
+                    using (MySqlDataReader reader = MyDAUser.SelectCommand.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            user.UsuarioID = Convert.ToInt32(reader[0].ToString());
+                            // user.image = reader[1].ToString();
+                            user.Nombre = reader[1].ToString();
+
+                        }
+                    }
+                    pbProfile.ImageLocation = "http://lan.bktgames.com/wp-content/themes/blackfyre/img/defaults/default-profile.jpg";
                 }
 
-                pbProfile.ImageLocation = user.image;
+                
                 lblusername.Text = user.Nombre;
                 //  MessageBox.Show("Connection Open ! ");
 
@@ -703,40 +744,13 @@ namespace BKTSHIELD
                 statusOthers.Width = 70;
                 dtgRoomsOthers.Columns.Add(statusOthers);
 
-                
+
                 // Bitmap bmp = new Bitmap();
                 //Bitmap bmp2 = new Bitmap();
                 // dtgRooms.DataSource = d1.Tables[0].DefaultView;
-                foreach (DataGridViewRow row in dtgRooms.Rows)
-                {
-                    row.Height = 50;
-                    
-                    //var wc = new WebClient();
-                    //  Image x = Image.FromStream(wc.OpenRead(row["Equipo AS"].ToString()));
 
-                    HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(row.Cells[1].Value.ToString());
-                    myRequest.Method = "GET";
-                    HttpWebResponse myResponse = (HttpWebResponse)myRequest.GetResponse();
-                    Bitmap bmp = new Bitmap(myResponse.GetResponseStream());
-                    //Image bmp = Image.FromFile(@"" + row["Equipo A"].ToString());
-                    myResponse.Close();
-                    row.Cells[2].Value = bmp;
 
-                    HttpWebRequest myRequest2 = (HttpWebRequest)WebRequest.Create(row.Cells[4].Value.ToString());
-                    myRequest2.Method = "GET";
-                    HttpWebResponse myResponse2 = (HttpWebResponse)myRequest2.GetResponse();
-                    Bitmap bmp2 = new Bitmap(myResponse2.GetResponseStream());
-                    //Image bmp = Image.FromFile(@"" + row["Equipo A"].ToString());
-                    myResponse2.Close();
-                    row.Cells[5].Value = bmp2;
-
-                    //   Image bmp2 = Image.FromFile(@"" + row["Equipo B"].ToString());
-                    //myResponse.Close();
-                    //   row["Equipo B"] = bmp2;
-
-                }
-                
-                
+                loaddtgMatch();
 
                 dtgRooms.AllowUserToAddRows = false;
                 dtgRoomsOthers.AllowUserToAddRows = false;
@@ -748,6 +762,51 @@ namespace BKTSHIELD
             {
                 ex.GetBaseException();// MessageBox.Show("Can not open connection ! ");
             }
+        }
+        private void loaddtgMatch()       
+        {
+            pbLoading.Refresh();
+            counter2 = counter2 + 1;
+            pbLoading.Refresh();
+            if (counter <= 1)
+            {
+                foreach (DataGridViewRow row in dtgRooms.Rows)
+                {
+                    
+                    pbLoading.Refresh();
+                    row.Height = 50;
+                    pbLoading.Refresh();
+
+                    HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(row.Cells[1].Value.ToString());
+                    pbLoading.Refresh();
+                    myRequest.Method = "GET";
+                    pbLoading.Refresh();
+                    HttpWebResponse myResponse = (HttpWebResponse)myRequest.GetResponse();
+                    pbLoading.Refresh();
+                    Bitmap bmp = new Bitmap(myResponse.GetResponseStream());
+                    pbLoading.Refresh();
+                    myResponse.Close();
+                    pbLoading.Refresh();
+                    row.Cells[2].Value = bmp;
+                    pbLoading.Refresh();
+                    HttpWebRequest myRequest2 = (HttpWebRequest)WebRequest.Create(row.Cells[4].Value.ToString());
+                    pbLoading.Refresh();
+                    myRequest2.Method = "GET";
+                    pbLoading.Refresh();
+                    HttpWebResponse myResponse2 = (HttpWebResponse)myRequest2.GetResponse();
+                    pbLoading.Refresh();
+                    Bitmap bmp2 = new Bitmap(myResponse2.GetResponseStream());
+                    pbLoading.Refresh();
+                    myResponse2.Close();
+                    pbLoading.Refresh();
+                    row.Cells[5].Value = bmp2;
+                    pbLoading.Refresh();
+
+                }
+            }
+            pbLoading.Refresh();
+            pbLoading.Visible = false;
+            lblloading.Visible = false;
         }
         public void loaddtgMatchOthers()
         {
@@ -1016,10 +1075,32 @@ namespace BKTSHIELD
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
+            counter = 0;
+            counter2 = 0;
             ShowInTaskbar = true;
             notifyIcon1.Visible = false;
             WindowState = FormWindowState.Normal;
-            loadgrid();
+            dtgRooms.Visible = false;
+            dtgRoomsOthers.Visible = false;
+            pbLoading.Visible = true;
+            if (Login.regionUri == "Latinoamérica")
+            {
+                lblloading.Text = "Cargando...";
+            }
+            if (Login.regionUri == "North America")
+            {
+                lblloading.Text = "Loading...";
+            }
+            pbLoading.Refresh();
+            lblloading.Visible = true;
+            // Display form modelessly
+            //loading.Show();
+
+            //  ALlow main UI thread to properly display please wait form.
+            Application.DoEvents();
+            loaddtgMatch();
+            dtgRooms.Visible = true;
+
         }
 
         private void frmBKT_Resize(object sender, EventArgs e)
@@ -1375,6 +1456,6 @@ namespace BKTSHIELD
             loaddtgMatchOthers();
         }
 
-
+      
     }
 }

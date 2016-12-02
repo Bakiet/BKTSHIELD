@@ -175,6 +175,9 @@ namespace BKTSHIELD
                 if (comboBox1.Text == "Latinoamérica")
                 {
                     sqlSelectAll = "SELECT um.`user_id` AS id, um.`meta_value` AS imageprofile, u.`display_name` AS nikename FROM `wp_usermeta` um, `wp_users` u WHERE um.`user_id`= u.`ID` AND u.user_email='" + username + "' AND um.meta_key = 'profile_photo'";
+                   
+                    //sqlSelectAll = "SELECT u.`id` AS id, u.`display_name` AS nikename FROM `wp_users` u WHERE u.user_email='" + username + "'";
+                   
                 }
                 if (comboBox1.Text == "North America")
                 {
@@ -186,24 +189,49 @@ namespace BKTSHIELD
                 cnn.Open();
                
                 using (MySqlDataReader reader = MyDA.SelectCommand.ExecuteReader())
-            {
-                while (reader.Read())
                 {
-                    user.UsuarioID = Convert.ToInt32(reader[0].ToString());
-                    user.image = reader[1].ToString();
-                    user.Nombre = reader[2].ToString();
+                    while (reader.Read())
+                    {
+                        user.UsuarioID = Convert.ToInt32(reader[0].ToString());
+                        user.image = reader[1].ToString();
+                        user.Nombre = reader[2].ToString();
                   
+                    }
                 }
-            }
-                
-                /*
-                DataTable table = new DataTable();
-                MyDA.Fill(table);
-                BindingSource bSource = new BindingSource();
-                bSource.DataSource = table;
-                */
-                
-                cnn.Close();
+                if(user.image == null)
+                {
+                    if (comboBox1.Text == "Latinoamérica")
+                    {
+
+                        sqlSelectAll = "SELECT u.`id` AS id, u.`display_name` AS nikename FROM `wp_users` u WHERE u.user_email='" + username + "'";
+
+                    }
+                    if (comboBox1.Text == "North America")
+                    {
+                        sqlSelectAll = "SELECT u.`id` AS id, u.`display_name` AS nikename FROM `wp_users` u WHERE u.user_email='" + username + "'";
+                       
+                    }
+
+                    MyDA.SelectCommand = new MySqlCommand(sqlSelectAll, cnn);
+                    using (MySqlDataReader reader = MyDA.SelectCommand.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            user.UsuarioID = Convert.ToInt32(reader[0].ToString());
+                           // user.image = reader[1].ToString();
+                            user.Nombre = reader[1].ToString();
+
+                        }
+                    }
+                }
+                    /*
+                    DataTable table = new DataTable();
+                    MyDA.Fill(table);
+                    BindingSource bSource = new BindingSource();
+                    bSource.DataSource = table;
+                    */
+
+                    cnn.Close();
                 
                 if (user.UsuarioID.ToString() != "0" || user.UsuarioID.ToString() != "") { 
                 if (responseText.Contains(user.Nombre))

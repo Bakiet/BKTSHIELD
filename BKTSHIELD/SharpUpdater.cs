@@ -15,7 +15,7 @@ namespace BKTSHIELD
     {
         //new updater
         private static int cVersion = 4;
-        private static string XMLFileLocation = "version.xml";
+        private static string XMLFileLocation = "http://bktgames.com/updates/version.xml";
 
         private static int oVersion;
         private static string Name;

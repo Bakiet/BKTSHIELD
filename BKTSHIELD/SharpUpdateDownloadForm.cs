@@ -78,7 +78,7 @@ namespace BKTSHIELD
             // Update progressbar on download
             if (Login.regionUri == "Latinoamérica")
             {
-                this.lblProgress.Text = String.Format("Descargado {0} of {1}", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
+                this.lblProgress.Text = String.Format("Descargado {0} de {1}", FormatBytes(e.BytesReceived, 1, true), FormatBytes(e.TotalBytesToReceive, 1, true));
             }
             if (Login.regionUri == "North America")
             {
